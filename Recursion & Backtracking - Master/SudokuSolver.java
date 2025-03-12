@@ -5,7 +5,7 @@ import java.lang.*;
 
 public class SudokuSolver {
     public static void main(String[] args) {
-        // Test Case 1
+        
         char[][] board1 = {
             {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
             {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
