@@ -14,7 +14,6 @@ public class CoinChange {
 
       minCoinsDP[i] = Integer.MAX_VALUE;
 
-      // Try each coin
       for (int coin : coins) {
         if (coin <= i && minCoinsDP[i - coin] != Integer.MAX_VALUE)
           minCoinsDP[i] = Math.min(minCoinsDP[i], 1 + minCoinsDP[i - coin]);
