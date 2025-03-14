@@ -6,46 +6,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#ifdef LOCAL
-#define DEBUG(x) cerr << #x << " = " << x << '\n'
-#else
-#define DEBUG(x)
-#endif
-
-typedef long long ll;
-typedef unsigned long long ull;
-typedef long double ld;
-typedef pair<int, int> pii;
-typedef pair<ll, ll> pll;
-typedef vector<int> vi;
-typedef vector<ll> vll;
-typedef vector<pii> vpii;
-typedef vector<pll> vpll;
-
-const int INF = 1e9 + 5;
-const ll LINF = 1e18 + 5;
-const double EPS = 1e-9;
-const ll MOD = 1e9 + 7;
-
-#define all(x) (x).begin(), (x).end()
-#define rall(x) (x).rbegin(), (x).rend()
-#define rep(i, a, b) for (int i = (a); i < (b); ++i)
-#define per(i, a, b) for (int i = (a); i > (b); --i)
-#define trav(a, x) for (auto& a : x)
-#define pb push_back
-#define mp make_pair
-#define fi first
-#define se second
-#define sz(x) (int)((x).size())
-
-inline ll gcd(ll a, ll b) { while (b) { a %= b; swap(a, b); } return a; }
-inline ll lcm(ll a, ll b) { return a / gcd(a, b) * b; }
-inline ll mod_exp(ll x, ll y, ll m) { ll res = 1; x %= m; while (y > 0) { if (y & 1) res = res * x % m; x = x * x % m; y >>= 1; } return res; }
-inline ll mod_inv(ll x, ll m) { return mod_exp(x, m - 2, m); } // Only for prime m
-inline ll mod_add(ll a, ll b, ll m = MOD) { return (a + b) % m; }
-inline ll mod_sub(ll a, ll b, ll m = MOD) { return (a - b + m) % m; }
-inline ll mod_mul(ll a, ll b, ll m = MOD) { return (a * b) % m; }
-
 void fast_io() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
